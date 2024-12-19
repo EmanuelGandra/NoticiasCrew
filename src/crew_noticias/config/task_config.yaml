@@ -1,0 +1,33 @@
+tasks:
+  research_task:
+    description: >
+      Realizar uma pesquisa aprofundada sobre os setores definidos, identificando notícias e dados relevantes em fontes abertas.
+    expected_output: >
+      Uma lista de até 10 tópicos em formato de bullet points, destacando as informações mais relevantes sobre os setores definidos.
+    agent: researcher
+    tools:
+      - web.search
+    inputs:
+      filters:
+        date_range: last_week
+        language: pt
+      keywords:
+        - M&A
+        - Threats
+        - Growth
+        - Decline
+        - Debt
+        - Capital demand
+        - Outlook
+        - Investment
+        - Consolidation
+        - Thesis
+        - Divestment thesis
+        - Leverage
+      sources:
+        - Valor Econômico
+        - Exame
+        - CNN Brasil
+        - G1
+        - Bloomberg
+        - Reuters
